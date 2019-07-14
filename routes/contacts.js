@@ -51,9 +51,9 @@ const updateContact = async (req, res) => {
   const { name, email, phone, type } = req.body;
   const contactFields = {};
   if (name) contactFields.name = name;
-  if (email) contactFields.name = email;
-  if (phone) contactFields.name = phone;
-  if (type) contactFields.name = type;
+  if (email) contactFields.email = email;
+  if (phone) contactFields.phone = phone;
+  if (type) contactFields.type = type;
 
   let contact = await Contact.findById(contactId);
   if (!contact) {

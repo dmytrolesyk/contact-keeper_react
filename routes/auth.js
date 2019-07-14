@@ -48,7 +48,6 @@ const login = async (req, res) => {
 
 const getLoggedInUser = async (req, res) => {
   const { id } = req.user;
-  console.log(id);
   const user = await User.findById(id).select('-password');
   res.status(200).json({
     message: 'User received successfully',
