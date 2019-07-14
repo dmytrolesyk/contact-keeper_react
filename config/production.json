@@ -1,0 +1,4 @@
+{
+  "mongoURI": "mongodb://dmytro:database123@ds261716.mlab.com:61716/contact_keeper",
+  "jwtSecret": "secret"
+}
